@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.homepage {
+    background: url(images/homepagebg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.homepage button {
+    background-color: gray;
+    color: white;
+    padding: 4px 14px 4px 14px;
+    border-radius: 20px;
+}
+.leftspace {
+    background-color: rgba(0, 251, 255, 0.4);
+    height: 100vh;
+    width: 30vw;
+    /* border: 1px solid red; */
+    overflow: hidden;
+    margin-left: -15vw;
+    border-radius: 0 0 70% 70%;
+    background-color: rgb(96, 179, 212, 0.5);
+}
+
+.mainHero {
+    width: 30vw;
+    /* border: 1px solid red; */
+}
+
+.mainHero h3 {
+    font-size: 42px;
+    color: wheat;
+    text-shadow: 2px 0 #000, -2px 0 #000,
+        0 2px #000, 0 -2px #000,
+        1px 1px #000, -1px -1px #000,
+        1px -1px #000, -1px 1px #000;
+}
+
+form input,
+form textarea {
+    text-align: center;
+    width: 80%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+form textarea {
+    height: 50px;
+}
+
+.ceoSection {
+    width: min(30vw, 300px);
+    /* border: 1px solid red; */
+    padding: 8px;
+    background-color: rgb(96, 179, 212, 0.5);
+    text-align: justify;
+}
+
+.ceoSection .ceoImg {
+    margin: auto;
+    margin-top: 5px;
+    /* border: 1px solid green; */
+    background-image: url(images/MyImage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 60%;
+    padding-top: 60%;
+    border-radius: 10%;
+}
+
+.reviews {
+    width: 100%;
+    height: fit-content;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.persons {
+    margin: 10px;
+    background-color: rgb(124, 255, 107);
+    width: max(30vw,200px);
+    text-align: justify;    
+    padding: 5px 4px 5px 4px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 12px black;
+    border-radius: 10px;
+}
+
+.endingfooter {
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 100%;
+}
+
+.footlink {
+    /* border: 2px solid red; */
+    margin: auto;
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.linkingicon {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    margin-top: 50px;
+    border-radius: 50%;
+    background-color: rgb(37, 190, 37);
+}
+
+.lowerlink {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.lowerlink a {
+    text-decoration: none;
+    margin: 20px;
+    margin-top: 60px;
+    color: white;
+}
+
+.lowerlink a:hover {
+    color: rgb(76, 199, 96);
+}
+
+
+
+#formMiddle button:hover {
+    background-color: rgb(16, 228, 16);
+    cursor: pointer;
+}
+
+#txtarea {
+    font-size: 30px;
+    width: 70%;
+    place-content: hek;
+}
+
+#navigate {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    top: 25vh;
+}
+
+#navigate a {
+    background-color: khaki;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20%;
+    width: fit-content;
+    border-radius: 15px;
+    /* border: 1px solid red; */
+    padding: 15px;
+    transition-property: all;
+    transition-duration: 0.1s;
+}
+
+#navigate a:hover {
+    transform-origin: 0% 50%;
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
+
+#last {
+    margin-bottom: 90px;
+}
+
+@media screen and (max-width:600px) {
+
+    .homepage {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .leftspace {
+        display: none;
+    }
+    .mainHero,
+    .ceoSection {
+        width: 60vw;
+    }
+    .ceoSection .ceoImg{
+        width: 40%;
+        padding-top: 40%;
+    }
+
+    
+}
